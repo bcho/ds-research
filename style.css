@@ -1,0 +1,296 @@
+@charset "utf-8";
+
+
+/*---- Resetting ----*/
+* {
+	padding: 0px;
+	margin: 0px;
+	/*border: 1px solid red !important;*/ /*show the border*/
+}
+
+/*---- Standard Setting ----*/
+body {
+	margin: 0 auto;
+	width: 970px;
+}
+
+a {
+	text-decoration: none;
+	color: #cb3f20;
+}
+
+a:hover {
+	color: #000;
+}
+
+ul {
+	padding-left: 10px;
+	margin: 0;
+	list-style-type: none;
+}
+
+p {
+	padding: 5px 2px 2px 10px;
+	margin: 2px 0 0 0;
+	color: #333;
+	line-height: 1.5em;
+}
+h2 {
+	padding: 5px 5px 5px 1px;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	font-weight: normal;
+}
+
+h2 span {
+	color: #666;
+	font-size: 1.3em;
+}
+
+h3 {
+	padding: 10px 2px 5px 2px;
+	margin: 0 0 0 5px;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: normal;
+}
+
+h5 {
+	padding: 10px 2px 5px 2px;
+	margin: 0 0 0 5px;
+	font-size: .75em;
+}
+
+img {
+	max-width: 750px;
+}
+
+strong {
+	color: #ea891b;
+}
+/*---- Layout Setting ----*/
+
+#index_container, #container {
+	padding-top: 55px;
+	padding-left: 40px;
+}
+
+#index_container {
+        max-height: 550px;
+        overflow: hidden;
+}
+
+#partA {
+	float: left;
+	background: transparent url(images/logo.png) no-repeat scroll left top;
+	height: 75px;
+	width: 75px;
+	cursor: pointer;
+}
+
+#partB {
+	float: left;
+	padding-top: 69px;
+	margin-left: 29px;
+	width: 745px;
+}
+
+#index_footer {
+        clear: both;
+        margin-left: 140px;
+        width: 745px;
+}
+
+#footer {
+	clear: both;
+	margin-left: 145px;
+	width: 745px;
+	margin-top: 10px;
+}
+
+#footer p.home, #index_footer p.home {
+	color: #c3c3c3;
+	font-size: .7em;
+}
+
+/*---- Head Part Setting ----*/
+/*-- Head Nav setting --*/
+#nav {
+	float: right;
+	top: -50px;
+	height: 40px;
+	position: relative;
+}
+
+#nav li {
+	float: left;
+}
+
+#nav li a {
+	display: block;
+	width: 120px;
+	height: 40px;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-right: #ddd solid 1px;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav li a span{
+	display: block;
+	font-size: 18px;
+	margin-bottom: 3px;
+	color: #cb3f20;
+}
+
+#nav li a:hover,#nav li a:hover span
+{
+	background-color:#cb3f20;
+	color:#fff;
+}
+#nav li a.select,#nav li a.select span
+{
+	background-color:#135FCF;
+	color:#fff;
+}
+
+/*-- Left Nav --*/
+#left_nav {
+	position: relative;
+	width: 150px;
+	top: -475px;
+	left: 10px;
+	background: url(images/transparent.png);
+	padding: 5px;
+	margin: 0;
+}
+
+#left_nav li {
+	padding: 5px 0 1px 0;
+	margin-bottom: 5px;
+}
+
+#left_nav li span {
+	margin-top: 15px;
+	font-size: 1.4em;
+	color: #eb3f20;
+}
+
+#left_nav li.sub_item a {
+        padding-right: 3px;
+	margin-left: 3px;
+	margin-bottom: 15px;
+	border-right: #666 solid 1px;
+	color: #ffffff;
+	font-size: .8em;
+}
+
+#left_nav li.sub_item a:last-child {
+    border-right: #666 solid 0;
+}
+
+#left_nav li a:hover {
+	color: #fdc723;
+}
+
+/*-- Intro --*/
+#intro {
+	position: relative;
+	float: left;
+	background: url(images/transparent.png);
+	top:-850px;
+	left:620px;
+	width:auto;
+	height:auto;
+	font-size: .7em;
+}
+
+#intro p {
+	padding:2px 2px 2px 2px;
+	color: #a6a6a6;
+}
+
+/*-- Content --*/
+#content {
+	width: 745px;
+	max-height: 540px;
+}
+
+
+/*-- Artical --*/
+#artical {
+	margin: 25px 3px 5px 3px;
+	padding: 10px 2px 5px 2px;
+	width: 745px;
+}
+
+#artical h2 {
+	margin-top: 5px;
+	padding: 1px 5px 5px 1px;
+	font-size: 1.5em;
+}
+
+#artical h2 span {
+	color: #666;
+	font-size: 1.3em;
+}
+
+#artical .rightPart {
+	float: right;
+}
+
+#artical .leftPart {
+	float: left;
+}
+
+#artical p.little {
+	font-style: italic;
+	font-size: .75em;
+}
+
+#artical p.small {
+	font-size: .8em;
+}
+
+#artical pre {
+	margin: 5px;
+	padding: 3px;
+	font-size: 1em;
+	background-color: #ffe;
+}
+
+#artical blockquote {
+	background: url(images/douhao-xia.png) no-repeat top left;
+	margin: 10px;
+	margin-left: 20px;
+	border: none;
+}
+
+#artical blockquote p {
+	background: url(images/douhao-shang.png) no-repeat bottom right;
+	margin: 0;
+	padding: 15px 15px 10px 10px;
+}
+
+#artical blockquote p.no {
+	background: transparent;
+}
+
+#artical #rightNav {
+	position: fixed;
+	right: 75px;
+	width: 150px;
+	height: 200px;
+}
+
+#artical #rightNav p {
+	font-size: .85em;
+	line-height: .5em;
+}
+
+#artical #rightNav a {
+	font-size: .9em;
+}
